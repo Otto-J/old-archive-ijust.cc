@@ -1,16 +1,16 @@
 {
-	"name": "咿呀 能跑就行 | 优秀工程师学习之路",
-	"short_name": "咿呀 能跑就行",
-	"description": "辛宝Otto 的个人 Solo 播客和博客",
-	"icons": [
-		{
-			"src": "/boy.png",
-			"sizes": "256x256",
-			"type": "image/png"
-		}
-	],
-	"start_url": "/",
-	"background_color": "#1d1f21",
-	"theme_color": "#2bbc8a",
-	"display": "standalone"
+  "name": "咿呀 能跑就行 | 优秀工程师学习之路",
+  "short_name": "咿呀 能跑就行",
+  "description": "辛宝Otto 的个人 Solo 播客和博客",
+  "icons": [
+    {
+      "src": "/boy.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#1d1f21",
+  "theme_color": "#2bbc8a",
+  "display": "standalone"
 }
