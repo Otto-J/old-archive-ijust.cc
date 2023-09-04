@@ -52,6 +52,6 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: "oss-cn-beijing" # optional: defaults to us-east-1
-          AWS_S3_ENDPOINT: "https://oss-cn-beijing.aliyuncs.com"
+          AWS_S3_ENDPOINT: "https://${{ secrets.AWS_S3_BUCKET }}.oss-cn-beijing.aliyuncs.com"
           SOURCE_DIR: "dist"
           DEST_DIR: "/"
