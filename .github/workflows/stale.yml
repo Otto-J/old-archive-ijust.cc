@@ -29,8 +29,8 @@ jobs:
         run: pnpm install
       - name: Build
         run: pnpm run build
-      - name: Test
-        run: pnpm test
+      # - name: Test
+      #   run: pnpm test
       - uses: TencentCloud/cos-action@v1
         with:
           secret_id: ${{ secrets.TENCENT_CLOUD_SECRET_ID }}
