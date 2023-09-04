@@ -3,9 +3,9 @@ import type { Page, GetStaticPaths } from "astro";
 import type { CollectionEntry } from "astro:content";
 import { getCollection } from "astro:content";
 import PageLayout from "@/layouts/Base";
-import PodcastPreview from "@/components/blog/PodcastPreview";
+import PodcastPreview from "@/components/blog/PostPreview";
 import Pagination from "@/components/Paginator";
-import { getUniqueTags2 as getUniqueTags, sortMDByDate2 as sortMDByDate } from "@/utils";
+import { getUniqueTags, sortMDByDate } from "@/utils";
 
 export const getStaticPaths = (async ({ paginate }) => {
 	const allPodcasts = await getCollection('podcast');
@@ -22,7 +22,7 @@ interface Props {
 const { page, uniqueTags } = Astro.props;
 
 const meta = {
-	title: "Podcast",
+	title: "过去我发布的播客",
 	description: "历史发布的播客",
 };
 
@@ -43,7 +43,7 @@ const paginationProps = {
 ---
 
 <PageLayout meta={meta}>
-	<h1 class="title mb-6">Podcasts</h1>
+	<h1 class="title mb-6">{meta.title}</h1>
 	<div class="grid gap-y-16 sm:grid-cols-[3fr_1fr] sm:gap-x-8">
 		<section aria-label="Blog post list">
 			<ul class="space-y-8 text-start">

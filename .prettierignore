@@ -6,3 +6,5 @@ node_modules
 
 pnpm-lock.yaml
 dist
+netlify-identity-widget.js
+identity.netlify.com_v1_netlify-identity-widget.js

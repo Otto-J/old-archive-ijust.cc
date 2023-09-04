@@ -5,7 +5,6 @@ import PodcastLayout from "@/layouts/PodcastPost";
 
 export const getStaticPaths = (async () => {
 	const podcastEntries = await getCollection('podcast');
-  //console.d//log(22,blogEntries)
 	return podcastEntries.map((entry) => ({
 		params: { slug: entry.slug },
 		props: { entry },

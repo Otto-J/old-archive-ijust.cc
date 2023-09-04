@@ -2,3 +2,6 @@ dist
 node_modules
 .github
 .changeset
+
+netlify-identity-widget.js
+identity.netlify.com_v1_netlify-identity-widget.js

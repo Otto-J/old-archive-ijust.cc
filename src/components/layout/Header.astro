@@ -1,7 +1,7 @@
 ---
 import ThemeToggle from "../ThemeToggle.astro";
 import Search from "../Search.astro";
-import { menuLinks } from "@/site-config";
+import {  menuLinks, siteConfig } from "@/site-config";
 
 const url = new URL(Astro.request.url);
 ---
@@ -30,7 +30,7 @@ const url = new URL(Astro.request.url);
 			aria-current={url.pathname === "/" ? "page" : false}
 		>
 			<img src="/boy.png" alt="logo" class=" w-32">
-			<span class="text-xl font-bold sm:text-2xl">咿呀 能跑就行</span>
+			<span class="text-xl font-bold sm:text-2xl">{siteConfig.title}</span>
 		</a>
 		<nav
 			id="navigation-menu"

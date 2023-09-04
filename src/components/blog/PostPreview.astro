@@ -1,10 +1,11 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import type { HTMLTag, Polymorphic } from "astro/types";
+import {PATH_PODCASTS,PATH_POSTS} from '@/site-config'
 import FormattedDate from "../FormattedDate.astro";
 
 type Props<Tag extends HTMLTag> = Polymorphic<{ as: Tag }> & {
-	post: CollectionEntry<"post">;
+	post: CollectionEntry<"post"|'podcast'>;
 	withDesc?: boolean;
 };
 
@@ -14,7 +15,9 @@ const postDate = post.data.updatedDate ?? post.data.publishDate;
 
 <FormattedDate date={postDate} class="min-w-[120px] text-gray-500" />
 <Tag>
-	<a href={`/posts/${post.slug}/`} class="cactus-link" rel="prefetch">
+  <span>[{post.collection}] - </span>
+
+	<a href={post.collection === 'post'? `${PATH_POSTS}${post.slug}/`:`${PATH_PODCASTS}${post.slug}/`} class="cactus-link" rel="prefetch">
 		{post.data.title}
 	</a>
 </Tag>

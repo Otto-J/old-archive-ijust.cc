@@ -8,9 +8,14 @@ import { sortMDByDate } from "@/utils";
 const MAX_POSTS = 10;
 // post podcast
 const allPosts = await getCollection("post");
-//const allPodcasts = await getCollection("podcast");
+const allPodcasts = await getCollection("podcast");
 
-const allThings = [...allPosts];
+const allThings = [...allPosts,...allPodcasts];
+// const {body,...rest}
+console.log(111,allThings.map(i=>{
+  const {body,render,...rest} = i;
+  return rest
+}))
 //const allThings = [...allPosts, ...allPodcasts];
 const allPostsByDate = sortMDByDate(allThings).slice(0, MAX_POSTS);
 
