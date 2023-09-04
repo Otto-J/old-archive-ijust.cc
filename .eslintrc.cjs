@@ -20,6 +20,7 @@ module.exports = {
 			"warn",
 			{ varsIgnorePattern: "Props", ignoreRestSiblings: true },
 		],
+		"@typescript-eslint/ban-ts-comment": "off",
 	},
 	overrides: [
 		{

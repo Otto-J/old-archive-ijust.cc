@@ -1,16 +1,11 @@
 {
-	"name": "Astro Theme Cactus Demo",
-	"short_name": "Astro_Cactus",
-	"description": "Starter blog site for Astro",
+	"name": "咿呀 能跑就行 | 优秀工程师学习之路",
+	"short_name": "咿呀 能跑就行",
+	"description": "辛宝Otto 的个人 Solo 播客和博客",
 	"icons": [
 		{
-			"src": "/192x192.png",
-			"sizes": "192x192",
-			"type": "image/png"
-		},
-		{
-			"src": "/512x512.png",
-			"sizes": "512x512",
+			"src": "/boy.png",
+			"sizes": "256x256",
 			"type": "image/png"
 		}
 	],

@@ -57,9 +57,11 @@ const cactusTech: Array<{ title: string; desc: string; href: string }> = [
 	<section>
 		<h1 class="title mb-6">Hello World!</h1>
 		<p class="mb-4">
-			Hi, I’m a theme for Astro, an example of how you can use this starter to create a personal
-			blog. If you want to know more about how you can customise me, add more posts, and make it
-			your own, click on one the github icon link below which will take you to my repo.
+我是辛宝Otto，北漂程序员儿。平时喜欢分享一些技术和生活感悟。
+    </p>
+    <p class="mb-4">
+
+如果你是一名程序员，也欢迎关注我做的另一个前端音频播客 <a class="border-b border-red-400" href='https://www.xiaoyuzhoufm.com/podcast/613753ef23c82a9a1ccfdf35'>Web Worker 播客</a>
 		</p>
 		<SocialList />
 	</section>
@@ -75,24 +77,5 @@ const cactusTech: Array<{ title: string; desc: string; href: string }> = [
 			}
 		</ul>
 	</section>
-	<section class="mt-16">
-		<h2 class="title mb-4 text-xl">Technologies</h2>
-		<ul class="space-y-4 sm:space-y-2">
-			{
-				cactusTech.map(({ href, title, desc }) => (
-					<li>
-						<a
-							href={href}
-							target="_blank"
-							rel="noopener noreferrer"
-							class="cactus-link inline-block"
-						>
-							{title}
-						</a>: 
-						<p class="inline-block sm:mt-2">{desc}</p>
-					</li>
-				))
-			}
-		</ul>
-	</section>
+
 </PageLayout>
