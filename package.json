@@ -8,7 +8,8 @@
     "build": "astro build",
     "postbuild": "pagefind --source dist",
     "preview": "astro preview",
-    "format": "prettier -w --cache ."
+    "format": "prettier -w --cache .",
+    "localServer": "npx decap-server "
   },
   "devDependencies": {
     "@pagefind/default-ui": "^0.12.0",

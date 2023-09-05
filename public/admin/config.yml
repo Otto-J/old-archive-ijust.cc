@@ -1,4 +1,4 @@
-# local_backend: true
+local_backend: true
 
 backend:
   name: git-gateway
@@ -21,9 +21,9 @@ locale: "zh_Hans"
 collections:
   - name: "post"
     label: "文章"
-    slug: "{{ fields.slug }}"
     folder: "src/content/post"
     create: true
+    slug: "{{fields.slug}}"
     fields:
       # slug
       - { label: "URL", name: "slug", widget: "string", hint: "文章链接" }
