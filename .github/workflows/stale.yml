@@ -41,7 +41,7 @@ jobs:
           cos_region: ${{ secrets.COS_REGION }}
           local_path: dist
           remote_path: /
-          clean: false # 先不删除
+          clean: true # 先不删除
 
 
       # - name: Upload to Aliyun OSS 阿里云对象存储 不知道为啥有个 404 先不启用
