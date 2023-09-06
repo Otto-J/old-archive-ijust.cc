@@ -12,7 +12,7 @@
     <script src="/identity.netlify.com_v1_netlify-identity-widget.js"></script>
 
     <script>
-      if (window && window.netlifyIdentity) {
+      if (window && window.netlifyIdentity && location.host === "global.ijust.cc") {
         window.netlifyIdentity.on("init", (user) => {
           if (!user) {
             window.netlifyIdentity.on("login", () => {

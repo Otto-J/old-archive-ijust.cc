@@ -6,10 +6,8 @@ backend:
   cms_label_prefix: Otto
 
 publish_mode: editorial_workflow
-# display_url: https://ijust.cc
-display_url_path: https://ijust.cc
-site_url: https://ijust.cc
-# site_url: https://ijust.cc
+display_url_path: https://global.ijust.cc
+site_url: https://global.ijust.cc
 
 show_preview_links: true # default is true
 

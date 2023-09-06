@@ -32,3 +32,24 @@
     @apply mx-auto flex min-h-screen max-w-5xl flex-col bg-bgColor px-8 pt-16 font-mono text-base font-normal text-textColor antialiased;
   }
 }
+
+/* ::view-transition-old(toggle-theme),
+::view-transition-new(toggle-theme) {
+  animation: none;
+  mix-blend-mode: normal;
+} */
+
+/* 进入dark模式和退出dark模式时，两个图像的位置顺序正好相反 */
+/* .dark::view-transition-old(toggle-theme) {
+  z-index: 1;
+}
+.dark::view-transition-new(toggle-theme) {
+  z-index: 999;
+}
+
+::view-transition-old(toggle-theme) {
+  z-index: 999;
+}
+::view-transition-new(toggle-theme) {
+  z-index: 1;
+} */

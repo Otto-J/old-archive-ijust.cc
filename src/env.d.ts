@@ -2,7 +2,7 @@
 /// <reference path="../.astro/types.d.ts" />
 /// <reference types="astro/client" />
 
-// window 挂 netlifyIdentity
+// window.netlifyIdentity:any
 declare global {
   interface Window {
     netlifyIdentity: any;
